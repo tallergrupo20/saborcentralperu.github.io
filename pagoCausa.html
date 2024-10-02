@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Causa - Proceso de Pago</title>
+    <link rel="stylesheet" href="pago.css">
+    <script src="pagoCausa.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Proceso de Pago</h1>
+    </header>
+    <main>
+        <section class="plate-info">
+            <h2>Causa</h2>
+            <img src="images/causa.jpg" alt="Causa">
+            <p>La causa es un plato tradicional de la cocina peruana, que tiene sus raíces en la época precolombina, cuando la papa era uno de los alimentos básicos. Con el tiempo, se perfeccionó en la Lima virreinal con influencias de la cocina española.</p>
+            <p>Ingredientes: Papa amarilla, ají amarillo, limón, aceite, sal, y pimienta. Los rellenos pueden incluir atún, pollo desmenuzado, palta, mayonesa y huevo duro.</p>
+            <p>Preparación: Se cocina la papa amarilla, se aplasta hasta formar un puré suave y se mezcla con ají amarillo, limón, sal, pimienta y aceite. Esta masa se coloca en capas alternadas con el relleno (puede ser de pollo o atún mezclado con mayonesa). Se sirve fría, decorada con huevo duro, aceitunas y hojas de lechuga.</p>
+        </section>
+        <section class="payment-methods">
+            <h3>Seleccione un Método de Pago</h3>
+            <ul>
+                <li>
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">Yape</label>
+                </li>
+                <li>
+                    <input type="radio" id="credit-card" name="payment" value="credit-card">
+                    <label for="credit-card">Tarjeta de Crédito</label>
+                </li>
+                <li>
+                    <input type="radio" id="cash" name="payment" value="cash">
+                    <label for="cash">Efectivo</label>
+                </li>
+            </ul>
+            <button id="confirm-button" type="button">Confirmar Pedido</button>
+        </section>
+        <footer>
+        </footer>
+    </main>
+</body>
+</html>

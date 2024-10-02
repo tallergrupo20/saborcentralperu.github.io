@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pechuga - Proceso de Pago</title>
+    <link rel="stylesheet" href="pago.css">
+    <script src="pagopechuga.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Proceso de Pago</h1>
+    </header>
+    <main>
+        <section class="plate-info">
+            <h2>Pechuga a la Plancha</h2>
+            <img src="images/pechuga.jpg" alt="Pechuga a la Plancha">
+            <p>La pechuga a la plancha con papas fritas y arroz blanco es un plato sencillo y nutritivo, popular en la cocina casera peruana por su fácil preparación y balance de proteínas y carbohidratos.</p>
+            <p>Ingredientes: Pechuga de pollo, papas, arroz blanco, aceite, sal, pimienta, y ajo.</p>
+            <p>Preparación: La pechuga de pollo se sazona con sal, pimienta y ajo, y luego se cocina en una sartén o plancha con un poco de aceite hasta que esté dorada y bien cocida. Aparte, las papas se pelan, cortan y fríen en aceite caliente hasta que estén crujientes. El arroz blanco se cocina de manera tradicional, sirviendo todo junto para un plato completo.</p>
+        </section>
+        <section class="payment-methods">
+            <h3>Seleccione un Método de Pago</h3>
+            <ul>
+                <li>
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">Yape</label>
+                </li>
+                <li>
+                    <input type="radio" id="credit-card" name="payment" value="credit-card">
+                    <label for="credit-card">Tarjeta de Crédito</label>
+                </li>
+                <li>
+                    <input type="radio" id="cash" name="payment" value="cash">
+                    <label for="cash">Efectivo</label>
+                </li>
+            </ul>
+            <button id="confirm-button" type="button">Confirmar Pedido</button>
+        </section>
+        <footer>
+        </footer>
+    </main>
+</body>
+</html>

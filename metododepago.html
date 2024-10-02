@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método de Pago - Tarjeta de Crédito</title>
+    <link rel="stylesheet" href="metododepago.css">
+    <script src="metododepago.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Método de Pago</h1>
+    </header>
+
+    <main>
+        <div class="payment-container">
+            <h2>Ingrese los detalles de su tarjeta</h2>
+
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="card-number">Número de Tarjeta:</label>
+                    <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="card-holder">Nombre del Titular:</label>
+                    <input type="text" id="card-holder" placeholder="Nombre completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="expiration-date">Fecha de Expiración:</label>
+                    <input type="text" id="expiration-date" placeholder="MM/AA" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" placeholder="123" required>
+                </div>
+
+                <button type="submit" id="confirm-payment-button">Confirmar Pago</button>
+            </form>
+
+            <!-- Mensaje de Confirmación -->
+            <div id="confirmation-message" style="display:none;">
+                <p>PAGO CONFIRMADO</p>
+                <button id="go-to-sede-button">ELEGIR SEDE</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

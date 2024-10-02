@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomo Saltado - Proceso de Pago</title>
+    <link rel="stylesheet" href="pago.css">
+    <script src="pagolomosaltado.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Proceso de Pago</h1>
+    </header>
+    <main>
+        <section class="plate-info">
+            <h2>Lomo Saltado</h2>
+            <img src="images/lomosaltado.jpg" alt="Lomo Saltado">
+            <p>El lomo saltado es un plato peruano de influencia china, que surgió en Lima a finales del siglo XIX, como resultado de la fusión entre la cocina criolla y la técnica del salteado traída por los inmigrantes chinos.</p>
+
+            <p>Ingredientes: Lomo de res, cebolla roja, tomate, ají amarillo, salsa de soja (sillao), vinagre, papas fritas, arroz blanco, aceite y perejil.</p>
+                
+            <p>Preparación: Se saltean en un wok o sartén a fuego alto los trozos de lomo de res con aceite caliente. Luego, se añaden cebolla, tomate y ají amarillo, agregando sillao y vinagre para dar sabor. Una vez todo bien integrado, se sirve acompañado de papas fritas y arroz blanco.</p>
+        </section>
+        <section class="payment-methods">
+            <h3>Seleccione un Método de Pago</h3>
+            <ul>
+                <li>
+                    <input type="radio" id="payment-yape" name="payment" value="1">
+                    <label for="payment-yape">Yape</label>
+                </li>
+                <li>
+                    <input type="radio" id="payment-credit-card" name="payment" value="2">
+                    <label for="payment-credit-card">Tarjeta de Crédito</label>
+                </li>
+                <li>
+                    <input type="radio" id="payment-cash" name="payment" value="3">
+                    <label for="payment-cash">Efectivo</label>
+                </li>
+            </ul>
+            <button id="confirm-button" type="button">Confirmar Pedido</button>
+        </section>
+        <footer>
+        </footer>
+    </main>
+</body>
+</html>

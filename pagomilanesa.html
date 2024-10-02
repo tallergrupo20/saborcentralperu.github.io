@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milanesa - Proceso de Pago</title>
+    <link rel="stylesheet" href="pago.css">
+    <script src="pagomilanesa.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Proceso de Pago</h1>
+    </header>
+    <main>
+        <section class="plate-info">
+            <h2>Milanesa</h2>
+            <img src="images/milanesa.jpg" alt="Milanesa">
+            <p>La milanesa con arroz blanco y papas fritas es un plato común en la cocina peruana, de origen europeo, adaptado a los sabores locales y muy apreciado por su sencillez y sabor.</p>
+            <p>Ingredientes: Filete de carne (res o pollo), pan rallado, huevo, harina, papas, arroz blanco, aceite, sal y pimienta.</p>
+            <p>Preparación: El filete se sazona con sal y pimienta, luego se pasa por harina, huevo batido y pan rallado, para finalmente freírlo en aceite caliente hasta que quede dorado y crujiente. Se acompaña con papas fritas y arroz blanco cocido, creando una combinación equilibrada de texturas y sabores.</p>
+        </section>
+        <section class="payment-methods">
+            <h3>Seleccione un Método de Pago</h3>
+            <ul>
+                <li>
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">Yape</label>
+                </li>
+                <li>
+                    <input type="radio" id="credit-card" name="payment" value="credit-card">
+                    <label for="credit-card">Tarjeta de Crédito</label>
+                </li>
+                <li>
+                    <input type="radio" id="cash" name="payment" value="cash">
+                    <label for="cash">Efectivo</label>
+                </li>
+            </ul>
+            <button id="confirm-button" type="button">Confirmar Pedido</button>
+        </section>
+        <footer>
+        </footer>
+    </main>
+</body>
+</html>

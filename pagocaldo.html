@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caldo de Gallina - Proceso de Pago</title>
+    <link rel="stylesheet" href="pago.css">
+    <script src="pagocaldo.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Proceso de Pago</h1>
+    </header>
+    <main>
+        <section class="plate-info">
+            <h2>Caldo de Gallina</h2>
+            <img src="images/caldo.jpg" alt="Caldo de Gallina">
+            <p>El caldo de gallina es un plato tradicional de la cocina peruana, conocido por su sabor reconfortante y nutritivo. Es muy apreciado en diversas regiones del Perú, especialmente en el ámbito familiar.</p>
+            <p>Ingredientes: Gallina, papas, zanahorias, cebolla, ajo, apio, hierbas aromáticas (como perejil y cilantro), sal, pimienta, y fideos (opcional).</p>
+            <p>Preparación: Se hierve la gallina con agua y sal hasta que esté tierna. Se retira la gallina y en el caldo resultante se agregan papas, zanahorias, cebolla, ajo y apio picados. Se cocina hasta que las verduras estén suaves. Se desmenuza la gallina y se reincorpora al caldo, junto con hierbas aromáticas. Opcionalmente, se pueden añadir fideos para un toque extra de sustancia. Se ajusta la sazón y se sirve caliente, acompañado de arroz o pan si se desea.</p>
+        </section>
+        <section class="payment-methods">
+            <h3>Seleccione un Método de Pago</h3>
+            <ul>
+                <li>
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">Yape</label>
+                </li>
+                <li>
+                    <input type="radio" id="credit-card" name="payment" value="credit-card">
+                    <label for="credit-card">Tarjeta de Crédito</label>
+                </li>
+                <li>
+                    <input type="radio" id="cash" name="payment" value="cash">
+                    <label for="cash">Efectivo</label>
+                </li>
+            </ul>
+            <button id="confirm-button" type="button">Confirmar Pedido</button>
+        </section>
+        <footer>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Pedidos</title>
+		<link rel="stylesheet" href="pedidos.css" />
+	</head>
+	<body>
+		<header>
+			<h1>MENÚ</h1>
+
+			<div class="container-icon">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="icon-cart"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+					/>
+				</svg>
+				<div class="count-products">
+					<span id="contador-productos">0</span>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					
+					    <div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Lomo Saltado</p>
+								<span class="precio-producto-carrito">S/.20</span>
+								</div>
+									<svg							
+
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"							
+									viewBox="0 0 24 24"
+									troke-width="1.5"
+									stroke="currentColor"
+									class="icon-close"
+									>
+									<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+									/>
+								</svg>
+							</div>
+						<div class="cart-total">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">S/.0</span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+			<div class="item">
+    <figure>
+        <img src="images/lomosaltado.jpg" alt="Lomo Saltado" />
+    </figure>
+    <div class="info-product">
+        <h2>Lomo Saltado</h2>
+        <p class="price">S/.12</p>
+        <button onclick="window.location.href='pagoplatos.html?id=1'">Elegir Plato</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="images/arrozconpollo.jpg" alt="Arroz con Pollo" />
+    </figure>
+    <div class="info-product">
+        <h2>Arroz con Pollo</h2>
+        <p class="price">S/.20</p>
+        <button onclick="window.location.href='pagoplatos.html?id=2'">Elegir Plato</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="images/carapulcra.jpg" alt="Carapulcra" />
+    </figure>
+    <div class="info-product">
+        <h2>Carapulcra</h2>
+        <p class="price">S/.12</p>
+        <button onclick="window.location.href='pagoplatos.html?id=3'">Elegir Plato</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="images/ceviche.jpg" alt="Ceviche" />
+    </figure>
+    <div class="info-product">
+        <h2>Plato de Ceviche</h2>
+        <p class="price">S/.15</p>
+        <button onclick="window.location.href='pagoplatos.html?id=4'">Elegir Plato</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="images/ajidegallina.jpg" alt="Aji de Gallina" />
+    </figure>
+    <div class="info-product">
+        <h2>Aji de Gallina</h2>
+        <p class="price">S/.10</p>
+        <button onclick="window.location.href='pagoajidegallina.html?id=5'">Elegir Plato</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="images/chanfainita.jpg" alt="Chanfainita" />
+    </figure>
+    <div class="info-product">
+        <h2>Chanfainita</h2>
+        <p class="price">S/.10</p>
+        <button onclick="window.location.href='pagochanfainita.html?id=6'">Elegir Plato</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="images/pachamanca.jpg" alt="Pachamanca" />
+    </figure>
+    <div class="info-product">
+        <h2>Plato de Pachamanca</h2>
+        <p class="price">S/.25</p>
+        <button onclick="window.location.href='pagoPachamanca.html?id=7'">Elegir Plato</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="images/Anticucho.jpg" alt="Anticucho" />
+    </figure>
+    <div class="info-product">
+        <h2>Plato de Anticucho</h2>
+        <p class="price">S/.10</p>
+        <button onclick="window.location.href='pagoAnticucho.html?id=8'">Elegir Plato</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="images/causa.jpg" alt="Causa" />
+    </figure>
+    <div class="info-product">
+        <h2>Causa</h2>
+        <p class="price">S/.5</p>
+        <button onclick="window.location.href='pagoCausa.html?id=9'">Elegir Plato</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="images/tacutacu.jpg" alt="Tacu Tacu" />
+    </figure>
+    <div class="info-product">
+        <h2>Tacu Tacu</h2>
+        <p class="price">S/.12</p>
+        <button onclick="window.location.href='pagotacutacu.html?id=10'">Elegir Plato</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="images/milanesa.jpg" alt="Milanesa" />
+    </figure>
+    <div class="info-product">
+        <h2>Plato de Milanesa</h2>
+        <p class="price">S/.10</p>
+        <button onclick="window.location.href='pagomilanesa.html?id=11'">Elegir Plato</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="images/pechuga.jpg" alt="Pechuga" />
+    </figure>
+    <div class="info-product">
+        <h2>Pechuga a la Plancha</h2>
+        <p class="price">S/.10</p>
+        <button onclick="window.location.href='pagopechuga.html?id=12'">Elegir Plato</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="images/cuychactado.jpg" alt="Cuy chactado" />
+    </figure>
+    <div class="info-product">
+        <h2>Plato de Cuy chactado</h2>
+        <p class="price">S/.30</p>
+        <button onclick="window.location.href='pagocuy.html?id=13'">Elegir Plato</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="images/caucau.jpg" alt="Cau Cau" />
+    </figure>
+    <div class="info-product">
+        <h2>Cau Cau</h2>
+        <p class="price">S/.9</p>
+        <button onclick="window.location.href='pagocaucau.html?id=14'">Elegir Plato</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="images/caldo.jpg" alt="Caldo de Gallina" />
+    </figure>
+    <div class="info-product">
+        <h2>Caldo de Gallina</h2>
+        <p class="price">S/.13</p>
+        <button onclick="window.location.href='pagocaldo.html?id=15'">Elegir Plato</button>
+    </div>
+</div>
+
+<!-- Botón de INICIO -->
+
+
+
+			<!-- Botón de INICIO -->
+<div class="boton-inicio">
+    <a href="#" id="btn-inicio" class="btn-inicio">INICIO</a>
+</div>
+
+<!-- Ventana emergente de confirmación -->
+<div id="confirmacion" class="confirmacion hidden">
+    <div class="confirmacion-content">
+        <p>¿Quieres regresar a INICIO?</p>
+        <button id="btn-si">Sí</button>
+        <button id="btn-no">No</button>
+    </div>
+</div>
+
+
+		</div>
+        <script src="pedidos.js"></script>
+	</body>
+</html>

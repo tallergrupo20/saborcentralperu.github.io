@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conócenos</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- link del Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+    <style>
+        .conocenos {
+            padding: 40px 20px;
+            background: #f9f9f9;
+            color: #333;
+        }
+        .conocenos h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #e94e77;
+            margin-bottom: 30px;
+        }
+        .conocenos h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-top: 20px;
+            border-bottom: 2px solid #e94e77;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        .conocenos p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        .conocenos ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .conocenos ul li {
+            flex: 1 1 calc(50% - 20px);
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .conocenos ul li i {
+            color: #e94e77;
+            font-size: 1.5rem;
+        }
+        .conocenos .imagen {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .conocenos .imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .info-cuadros {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .info-cuadro {
+            flex: 1;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .info-cuadro:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .info-cuadro h2 {
+            font-size: 1.8rem;
+            color: #e94e77;
+        }
+        .historia-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .historia-timeline .evento {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .historia-timeline .evento h3 {
+            font-size: 1.5rem;
+            color: #e94e77;
+        }
+        .historia-timeline .evento p {
+            font-size: 1rem;
+        }
+        .equipo-tarjetas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .equipo-tarjeta {
+            flex: 1 1 calc(33% - 20px);
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .equipo-tarjeta img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .equipo-tarjeta h3 {
+            font-size: 1.3rem;
+            color: #e94e77;
+        }
+        .equipo-tarjeta p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado (sin cambios) -->
+<header class="encabezado">
+    <div class="contenedor-navegacion">
+        <div class="contenido-navegacion contenedor">
+            <div class="logo">
+                <a href="index.html" class="logo-icon">
+                    <i class="fas fa-concierge-bell"></i>
+                </a>
+                <h2>Sabor Peruano</h2>
+            </div>
+
+            <!-- Contenedor para el ícono de sesión debajo del logo -->
+            <div class="contenedor-icono-sesion">
+                <img src="https://c0.klipartz.com/pngpicture/782/114/gratis-png-icono-de-perfil-icono-de-usuario-en-un-circulo-thumbnail.png"
+                     alt="Icono" class="icono-sesion">
+                <a href="login.jsp" class="btn-iniciar-sesion">Iniciar Sesión</a>
+            </div>
+
+            <nav class="navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="Conocenos.html">Conócenos</a>
+                <a href="pedidos.html">Menú</a>
+                <a href="contactanos.php">Contáctanos</a>
+                <a href="proveedores.html">Proveedor</a>
+                <a href="reservaciones.jsp">Reservaciones</a>
+                <a href="ubicacion.html">Ubicaciones</a>
+            </nav>
+        </div>
+
+        </div>
+    </header>
+
+    <!-- Sección Conócenos Mejorada -->
+    <div class="contenedor">
+        <section class="conocenos">
+            <h1>Conócenos</h1>
+            <div class="imagen">
+                <img src="images/restau.jpeg" alt="Interior del restaurante">
+            </div>
+            <p>En <strong>Sabor Peruano</strong>, nuestro objetivo es ofrecerte una experiencia culinaria auténtica y memorable. Fundado en 2010, nuestro restaurante se ha convertido en un lugar de encuentro para los amantes de la gastronomía peruana.</p>
+            
+            <div class="info-cuadros">
+                <div class="info-cuadro">
+                    <h2>Propósito</h2>
+                    <p>En <strong>Sabor Peruano</strong>, nuestro propósito es revivir la tradición culinaria peruana en cada plato, ofreciendo una experiencia única que celebre nuestra rica herencia gastronómica y cultural.</p>
+                </div>
+                <div class="info-cuadro">
+                    <h2>Misión</h2>
+                    <p>Nuestra misión es proporcionar a nuestros clientes una experiencia culinaria inolvidable mediante el uso de ingredientes frescos, recetas auténticas y un servicio excepcional. Nos esforzamos por ser un referente en la cocina peruana en nuestra comunidad.</p>
+                </div>
+                <div class="info-cuadro">
+                    <h2>Visión</h2>
+                    <p>Queremos ser el restaurante peruano más reconocido y querido en la región, expandiendo nuestro compromiso con la autenticidad y calidad en cada uno de nuestros platos, y creando un espacio donde cada visita sea una celebración de la cultura peruana.</p>
+                </div>
+            </div>
+            
+            <h2>Nuestra Historia</h2>
+            <div class="historia-timeline">
+                <div class="evento">
+                    <h3>2010 - Fundación</h3>
+                    <p>Todo comenzó con una pasión por la cocina peruana y un sueño de compartir nuestros sabores y tradiciones con el mundo. Desde nuestros humildes comienzos, hemos crecido y evolucionado, pero nuestro compromiso con la calidad y la autenticidad sigue siendo el mismo.</p>
+                </div>
+                <div class="evento">
+                    <h3>2015 - Expansión</h3>
+                    <p>Consolidamos nuestra presencia en la región y comenzamos a recibir reconocimiento por nuestra dedicación a la gastronomía peruana. La comunidad empezó a conocernos como un lugar de referencia para disfrutar de auténticos sabores peruanos.</p>
+                </div>
+                <div class="evento">
+                    <h3>2020 - Renovación</h3>
+                    <p>Actualizamos nuestro menú y mejoramos nuestras instalaciones para ofrecer una experiencia aún más completa a nuestros clientes. La renovación no solo incluyó aspectos físicos, sino también un nuevo enfoque en la experiencia del cliente.</p>
+                </div>
+            </div>
+            
+            <h2>El Equipo</h2>
+            <div class="equipo-tarjetas">
+                <div class="equipo-tarjeta">
+                    <img src="images/pablo.jpg" alt="Chef Pablo">
+                    <h3>Chef Pablo</h3>
+                    <p>Chef Principal, con más de 15 años de experiencia en la cocina peruana. Su pasión por la gastronomía se refleja en cada plato.</p>
+                </div>
+                <div class="equipo-tarjeta">
+                    <img src="images/tyron.jpg" alt="Tyron">
+                    <h3>Tyron</h3>
+                    <p>Gerente de Restaurante, encargado de asegurar que cada visita sea una experiencia inolvidable para nuestros clientes.</p>
+                </div>
+                <div class="equipo-tarjeta">
+                    <img src="images/Austin.jpg" alt="Austin">
+                    <h3>Austin</h3>
+                    <p>Sommelier, especializado en vinos que complementan perfectamente nuestros platos peruanos.</p>
+                </div>
+                <div class="equipo-tarjeta">
+                    <img src="images/uniqua.jpg" alt="Uniqua">
+                    <h3>Uniqua</h3>
+                    <p>Empleada del año, sus actuaciones en el año 2023 dieron frutos para ser uno de los mejores restaurantes en el Perú</p>
+                </div>
+            </div>
+            
+            <h2>¿Por qué Elegirnos?</h2>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Ingredientes frescos y locales.</li>
+                <li><i class="fas fa-check-circle"></i> Recetas auténticas de la tradición peruana.</li>
+                <li><i class="fas fa-check-circle"></i> Ambiente acogedor y familiar.</li>
+                <li><i class="fas fa-check-circle"></i> Servicio al cliente excepcional.</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Pie de Página (sin cambios) -->
+    <div class="contenedor-piepagina contenedor">
+        <div class="info">
+            <h3>Dirección</h3>
+            <p>242 Av. El Sol</p>
+        </div>
+        <div class="info">
+            <h3>Días especiales</h3>
+            <p>Viernes y Sábados 7am - 11pm</p>
+            <p>+987654321</p>
+        </div>
+        <div class="info">
+            <h3>Horarios</h3>
+            <p>Lunes - Domingo 7am - 11pm</p>
+            <div class="redes-sociales redes-pie">
+                <a href="https://www.facebook.com/profile.php?id=61565646991296" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/saborperuano731?utm_source=qr&igsh=NTEzNjA3cXdwZWQ=" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (sin cambios) -->
+    <footer class="footer">
+        <p>Página de prueba &copy; 2024 Sabor Peruano</p>
+    </footer>
+</body>
+</html>

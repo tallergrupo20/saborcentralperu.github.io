@@ -1,0 +1,197 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Contenedor centralizado */
+.contenedor {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Encabezado */
+.encabezado {
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    overflow: hidden;
+}
+
+.contenedor-navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+}
+
+.contenido-navegacion {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    margin-right: 10px;
+}
+
+.navegacion {
+    display: flex;
+    gap: 20px;
+}
+
+/* Imagen de fondo en la página de inicio */
+.imagen-fondo {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Contenido encabezado */
+.contenido-header {
+    position: relative;
+    overflow: hidden;
+}
+
+.contenedor-encabezado {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: 400px;
+    color: #fff;
+}
+
+.texto-encabezado {
+    position: absolute;
+    z-index: 10;
+    max-width: 60%;
+}
+
+.texto-encabezado h2 {
+    margin-bottom: 20px;
+}
+
+/* Botones */
+.btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #c82333;
+}
+
+/* Sección proveedores */
+.contenedor-nosotros {
+    padding: 3em 2em;
+    background-color: white;
+}
+
+/* Cuadrícula de proveedores */
+.grid-proveedores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Adaptación para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .grid-proveedores {
+        grid-template-columns: repeat(3, minmax(200px, 1fr)); /* Tres columnas con mínimo de 200px en pantallas pequeñas */
+        justify-content: center; /* Centra la cuadrícula en el contenedor */
+    }
+
+    .cuadro-proveedor {
+        width: 100%; /* Asegura que los cuadros ocupen todo el espacio disponible dentro de su celda */
+    }
+}
+
+.cuadro-proveedor {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cuadro-proveedor h2 {
+    color: #dc3545; /* Rojo */
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.cuadro-proveedor p {
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Pie de página */
+.contenedor-piepagina {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    border-top: 1px solid #ddd;
+}
+
+.info {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.info:last-child {
+    margin-right: 0;
+}
+
+.redes-pie a {
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

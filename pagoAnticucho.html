@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anticucho - Proceso de Pago</title>
+    <link rel="stylesheet" href="pago.css">
+    <script src="pagoAnticucho.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Proceso de Pago</h1>
+    </header>
+    <main>
+        <section class="plate-info">
+            <h2>Anticucho</h2>
+            <img src="images/Anticucho.jpg" alt="Anticucho">
+            <p>El anticucho es un plato tradicional peruano con raíces en la cocina andina, que se ha convertido en una de las delicias más populares de la gastronomía criolla. Originalmente, era un plato de origen indígena, y con el tiempo se fusionó con influencias africanas y españolas.</p>
+            <p>Ingredientes: Corazón de res (generalmente), ají panca, ajo, vinagre, comino, sal, pimienta, papas, y choclo.</p>
+            <p>Preparación: El corazón de res se limpia y se corta en trozos. Se marina en una mezcla de ají panca, ajo, vinagre, comino, sal y pimienta. Luego, se ensartan los trozos de carne en brochetas y se asan a la parrilla o al carbón hasta que estén bien dorados. Se sirve acompañado de papas cocidas, choclo y salsa de ají. A menudo se le añade una guarnición de salsa criolla (cebolla, ají, cilantro y limón) para un toque adicional de sabor.</p>
+        </section>
+        <section class="payment-methods">
+            <h3>Seleccione un Método de Pago</h3>
+            <ul>
+                <li>
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">Yape</label>
+                </li>
+                <li>
+                    <input type="radio" id="credit-card" name="payment" value="credit-card">
+                    <label for="credit-card">Tarjeta de Crédito</label>
+                </li>
+                <li>
+                    <input type="radio" id="cash" name="payment" value="cash">
+                    <label for="cash">Efectivo</label>
+                </li>
+            </ul>
+            <button id="confirm-button" type="button">Confirmar Pedido</button>
+        </section>
+        <footer>
+        </footer>
+    </main>
+</body>
+</html>

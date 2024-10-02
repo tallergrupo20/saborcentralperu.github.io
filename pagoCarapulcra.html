@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carapulcra - Proceso de Pago</title>
+    <link rel="stylesheet" href="pago.css">
+    <script src="pagoCarapulcra.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Proceso de Pago</h1>
+    </header>
+    <main>
+        <section class="plate-info">
+            <h2>Carapulcra</h2>
+            <img src="images/carapulcra.jpg" alt="Carapulcra">
+            <p>La carapulcra es un plato tradicional de la gastronomía peruana, especialmente popular en la región de Arequipa. Es un guiso antiguo que utiliza ingredientes locales y refleja la influencia de la cocina andina.</p>
+            <p>Ingredientes: Papa seca (deshidratada), carne de cerdo o res, ají panca, cebolla, ajo, comino, sal, y pimienta. Opcionalmente, se puede añadir maní molido y garbanzos.</p>
+            <p>Preparación: La papa seca se remoja y se cocina hasta que esté suave. En una sartén, se prepara un aderezo con cebolla, ajo, ají panca, comino, sal y pimienta. Se añade la carne de cerdo o res, que se cocina hasta que esté tierna. Luego, se incorporan las papas secas cocidas y, si se desea, maní molido o garbanzos. El guiso se cocina a fuego lento hasta que los sabores se mezclen bien y la papa tenga una textura espesa. Se sirve acompañado de arroz blanco o pan.</p>
+        </section>
+        <section class="payment-methods">
+            <h3>Seleccione un Método de Pago</h3>
+            <ul>
+                <li>
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">Yape</label>
+                </li>
+                <li>
+                    <input type="radio" id="credit-card" name="payment" value="credit-card">
+                    <label for="credit-card">Tarjeta de Crédito</label>
+                </li>
+                <li>
+                    <input type="radio" id="cash" name="payment" value="cash">
+                    <label for="cash">Efectivo</label>
+                </li>
+            </ul>
+            <button id="confirm-button" type="button">Confirmar Pedido</button>
+        </section>
+        <footer>
+        </footer>
+    </main>
+</body>
+</html>

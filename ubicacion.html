@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestras Ubicaciones</title>
+         <link rel="stylesheet" href="styles.css">
+    <!-- link del Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <style>
+        .ubicaciones {
+            padding: 40px 20px;
+            background: #f9f9f9;
+            color: #333;
+        }
+        .ubicaciones h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #e94e77;
+            margin-bottom: 30px;
+        }
+        .ubicaciones .mapa {
+            margin: 30px 0;
+            text-align: center;
+        }
+        .ubicaciones .mapa iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .ubicaciones .locales {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .ubicaciones .local {
+            flex: 1 1 calc(50% - 20px);
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+        .ubicaciones .local img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .ubicaciones .local h3 {
+            font-size: 1.5rem;
+            color: #e94e77;
+            margin-bottom: 10px;
+        }
+        .ubicaciones .local p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .ubicaciones .local .direccion {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+     <header class="encabezado">
+    <div class="contenedor-navegacion">
+        <div class="contenido-navegacion contenedor">
+            <div class="logo">
+                <a href="index.html" class="logo-icon">
+                    <i class="fas fa-concierge-bell"></i>
+                </a>
+                <h2>Sabor Peruano</h2>
+            </div>
+
+            <!-- Contenedor para el ícono de sesión debajo del logo -->
+            <div class="contenedor-icono-sesion">
+                <img src="https://c0.klipartz.com/pngpicture/782/114/gratis-png-icono-de-perfil-icono-de-usuario-en-un-circulo-thumbnail.png"
+                     alt="Icono" class="icono-sesion">
+                <a href="login.jsp" class="btn-iniciar-sesion">Iniciar Sesión</a>
+            </div>
+
+            <nav class="navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="Conocenos.html">Conócenos</a>
+                <a href="pedidos.html">Menú</a>
+                <a href="contactanos.php">Contáctanos</a>
+                <a href="proveedores.html">Proveedor</a>
+                <a href="reservaciones.jsp">Reservaciones</a>
+                <a href="ubicacion.html">Ubicaciones</a>
+            </nav>
+        </div>
+        </div>
+    </header>
+
+    <!-- Sección Ubicaciones -->
+    <div class="contenedor">
+        <section class="ubicaciones">
+            <h1>Nuestras Ubicaciones</h1>
+            <div class="mapa">
+                <!-- Reemplaza el enlace con el enlace del mapa de Google para tu ubicación -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1950.632217570514!2d-77.04431408202665!3d-12.02311927308583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8d090f6cb71%3A0x8d6b09532b6d6d77!2sAte%2C+Lima!5e0!3m2!1ses!2spe!4v1632188676976!5m2!1ses!2spe" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="locales">
+                <div class="local">
+                    <img src="images/tienda.jps.jpg" alt="Restaurante en Ate">
+                    <h3>Restaurante Ate</h3>
+                    <p class="direccion">Av. La Hacienda 123, Ate, Lima, Perú</p>
+                    <p>Teléfono: +987654321</p>
+                    <p>Horario: Lunes - Domingo 7am - 11pm</p>
+                </div>
+                <div class="local">
+                    <img src="images/tienda.jps.jpg" alt="Restaurante en San Juan de Lurigancho">
+                    <h3>Restaurante San Juan de Lurigancho</h3>
+                    <p class="direccion">242 Av. El Sol, San Juan de Lurigancho, Lima, Perú</p>
+                    <p>Teléfono: +987654322</p>
+                    <p>Horario: Lunes - Domingo 7am - 11pm</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Pie de Página (sin cambios) -->
+    <div class="contenedor-piepagina contenedor">
+        <div class="info">
+            <h3>Dirección</h3>
+            <p>242 Av. El Sol</p>
+        </div>
+        <div class="info">
+            <h3>Días especiales</h3>
+            <p>Viernes y Sábados 7am - 11pm</p>
+            <p>+987654321</p>
+        </div>
+        <div class="info">
+            <h3>Horarios</h3>
+            <p>Lunes - Domingo 7am - 11pm</p>
+            <div class="redes-sociales redes-pie">
+                <a href="https://www.facebook.com/profile.php?id=61565646991296" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/saborperuano731?utm_source=qr&igsh=NTEzNjA3cXdwZWQ=" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (sin cambios) -->
+    <footer class="footer">
+        <p>Página de prueba &copy; 2024 Sabor Peruano</p>
+    </footer>
+</body>
+</html>

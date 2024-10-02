@@ -1,0 +1,299 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4; /* Color de fondo general de la página */
+  }
+  
+  h2, h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Contenedor centralizado */
+  .contenedor {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Encabezado */
+  .encabezado {
+    position: relative; /* Habilita el uso de posición absoluta para los hijos */
+    background-color: #333; /* Color de fondo negro */
+    color: #fff;
+    overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+  }
+  
+  .contenedor-navegacion {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Alinea logo a la izquierda y el menú a la derecha */
+    align-items: center;
+  }
+  
+  .contenido-navegacion {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Alinea logo a la izquierda y el menú a la derecha */
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el ícono y el texto */
+  }
+  
+  .logo-icon {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+  }
+  
+  .logo h2 {
+    margin: 0;
+  }
+  
+  .navegacion {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Encabezado de la página de inicio */
+  .contenido-header {
+    position: relative;
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+  }
+  
+  .contenedor-encabezado {
+     position: relative; /* Habilita el uso de posición absoluta para los hijos */
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: 400px; /* Ajusta la altura según sea necesario */
+    color: #fff;
+  }
+  
+  .texto-encabezado {
+    position: absolute;
+    z-index: 10; /* Asegura que el texto esté sobre la imagen */
+    max-width: 60%;
+  }
+  
+  .texto-encabezado h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Botones */
+  .btn {
+    background-color: #dc3545; /* Color rojo */
+    color: #fff; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    background-color: #c82333; /* Rojo más oscuro para el hover */
+  }
+  
+  .btn-rojo {
+    background-color: #dc3545;
+  }
+  
+  .btn-rojo:hover {
+    background-color: #c82333;
+  }
+  
+  /* Contenedor para centrar el botón de contacto */
+  .btn-contacto {
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-top: 20px; /* Ajusta el espacio superior */
+  }
+  
+  /* Imagen de fondo en la página de inicio */
+  .imagen-fondo {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Asegura que la imagen esté detrás del texto */
+  }
+  
+  /* Formulario de Contacto */
+  .formulario-contacto {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+  }
+  
+  .informacion-contacto {
+    flex: 0 0 400px; /* Ancho reducido del recuadro */
+    margin-right: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+  }
+  
+  .informacion-contacto h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem; /* Tamaño del texto aumentado */
+  }
+  
+  .informacion-contacto p {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .redes-sociales a {
+    color: #333;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .formulario {
+    margin-left: 20px;
+    flex: 1;
+  }
+  
+  .input-formulario {
+    margin-bottom: 15px;
+  }
+  
+  .input-formulario label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-formulario input,
+  .input-formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Pie de Página */
+  .contenedor-piepagina {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .info {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+  }
+  
+  .info:last-child {
+    margin-right: 0;
+  }
+  
+  .redes-pie a {
+    margin-right: 10px;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* pagina de reservas */  
+/* styles.css */
+
+/* Estilos generales para el contenedor de reservaciones */
+.contenedor-reservacion {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Estilo para la sección de información de reservaciones */
+.informacion-reservacion {
+  flex: 1;
+  margin-right: 20px;
+  padding: 20px;
+  border: 1px solid #ccc; /* Gris claro */
+  border-radius: 8px;
+  background-color: #f9f9f9; /* Gris muy claro */
+  text-align: center; /* Centra el texto */
+}
+
+/* Estilo para el formulario de reservaciones */
+.formulario-reservacion {
+  flex: 2;
+  background-color: #fff;
+  border: 1px solid #ccc; /* Gris claro */
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Estilo para los campos del formulario */
+.input-formulario {
+  margin-bottom: 15px;
+}
+
+.input-formulario label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333; /* Gris oscuro para el texto */
+}
+
+.input-formulario input,
+.input-formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Gris claro */
+  border-radius: 4px;
+}
+
+.input-formulario textarea {
+  resize: vertical;
+}
+
+/* Estilo para el botón de envío */
+.btn-formulario {
+  text-align: center;
+}
+
+.btn-rojo {
+  background-color: #c8102e; /* Rojo */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+

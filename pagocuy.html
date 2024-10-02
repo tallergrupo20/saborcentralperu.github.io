@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuy chactado - Proceso de Pago</title>
+    <link rel="stylesheet" href="pago.css">
+    <script src="pagocuy.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Proceso de Pago</h1>
+    </header>
+    <main>
+        <section class="plate-info">
+            <h2>Cuy chactado</h2>
+            <img src="images/cuychactado.jpg" alt="Cuy chactado">
+            <p>El cuy chactado es un plato tradicional de la región andina del Perú, particularmente popular en Arequipa y otras zonas altoandinas. Su origen se remonta a la época preincaica, cuando el cuy era una fuente importante de proteínas en las comunidades indígenas.</p>
+            <p>Ingredientes: Cuy entero, harina de maíz o trigo, ajo, comino, sal, pimienta, aceite y limón.</p>
+            <p>Preparación: El cuy se limpia y sazona con ajo, sal, pimienta y comino. Luego, se pasa por harina y se fríe en abundante aceite caliente, aplastándolo ligeramente (de ahí el término "chactado") para que quede crujiente y dorado. Se sirve acompañado de papas doradas, choclo y salsa de ají.</p>
+        </section>
+        <section class="payment-methods">
+            <h3>Seleccione un Método de Pago</h3>
+            <ul>
+                <li>
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">Yape</label>
+                </li>
+                <li>
+                    <input type="radio" id="credit-card" name="payment" value="credit-card">
+                    <label for="credit-card">Tarjeta de Crédito</label>
+                </li>
+                <li>
+                    <input type="radio" id="cash" name="payment" value="cash">
+                    <label for="cash">Efectivo</label>
+                </li>
+            </ul>
+            <button id="confirm-button" type="button">Confirmar Pedido</button>
+        </section>
+        <footer>
+        </footer>
+    </main>
+</body>
+</html>

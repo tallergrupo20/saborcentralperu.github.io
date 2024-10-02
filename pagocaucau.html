@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cau Cau - Proceso de Pago</title>
+    <link rel="stylesheet" href="pago.css">
+    <script src="pagocaucau.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Proceso de Pago</h1>
+    </header>
+    <main>
+        <section class="plate-info">
+            <h2>Cau Cau</h2>
+            <img src="images/caucau.jpg" alt="Cau Cau">
+            <p>El cau cau es un plato típico de la cocina criolla peruana, de origen afroperuano, que destaca por su combinación de sabores únicos y su textura suave. Es un guiso sabroso que tradicionalmente se prepara con mondongo.</p>
+            <p>Ingredientes: Mondongo (panza de res), papas, cebolla, ajo, ají amarillo, cúrcuma, hierbabuena, sal, y pimienta.</p>
+            <p>Preparación: El mondongo se limpia, hierve y corta en pequeños trozos. En una sartén, se prepara un aderezo con cebolla, ajo, ají amarillo y cúrcuma, al que se añade el mondongo y las papas cortadas en cubos. Se cocina todo a fuego lento hasta que las papas estén tiernas y el guiso tenga una textura espesa. Finalmente, se agrega hierbabuena picada para darle frescura. Se sirve acompañado de arroz blanco.</p>
+        </section>
+        <section class="payment-methods">
+            <h3>Seleccione un Método de Pago</h3>
+            <ul>
+                <li>
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">Yape</label>
+                </li>
+                <li>
+                    <input type="radio" id="credit-card" name="payment" value="credit-card">
+                    <label for="credit-card">Tarjeta de Crédito</label>
+                </li>
+                <li>
+                    <input type="radio" id="cash" name="payment" value="cash">
+                    <label for="cash">Efectivo</label>
+                </li>
+            </ul>
+            <button id="confirm-button" type="button">Confirmar Pedido</button>
+        </section>
+        <footer>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tacu Tacu - Proceso de Pago</title>
+    <link rel="stylesheet" href="pago.css">
+    <script src="pagotacutacu.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Proceso de Pago</h1>
+    </header>
+    <main>
+        <section class="plate-info">
+            <h2>Tacu Tacu</h2>
+            <img src="images/tacutacu.jpg" alt="Tacu Tacu">
+            <p>El tacu tacu es un plato tradicional peruano que se remonta a la época colonial, originado como una forma de aprovechar las sobras de arroz y menestras en los hogares humildes.</p>
+            <p>Ingredientes: Arroz cocido, frejoles (pueden ser canarios, negros o pallares), cebolla, ajo, aceite, ají amarillo, sal, y pimienta.</p>
+            <p>Preparación: Se mezcla el arroz cocido con los frejoles previamente aderezados con cebolla, ajo y ají amarillo. Esta mezcla se fríe en una sartén caliente con aceite, dándole forma de tortilla hasta que quede dorada por ambos lados. Se puede acompañar con carne, huevo frito o plátano frito. </p>
+        </section>
+        <section class="payment-methods">
+            <h3>Seleccione un Método de Pago</h3>
+            <ul>
+                <li>
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">Yape</label>
+                </li>
+                <li>
+                    <input type="radio" id="credit-card" name="payment" value="credit-card">
+                    <label for="credit-card">Tarjeta de Crédito</label>
+                </li>
+                <li>
+                    <input type="radio" id="cash" name="payment" value="cash">
+                    <label for="cash">Efectivo</label>
+                </li>
+            </ul>
+            <button id="confirm-button" type="button">Confirmar Pedido</button>
+        </section>
+        <footer>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago Finalizado</title>
+    <link rel="stylesheet" href="pagofinalizadoEfectivo.css">
+    <script src="pagofinalizadoefectivo.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>PAGO FINALIZADO EN TIENDA</h1>
+    </header>
+    
+    <main>
+        <h2>Elige una tienda</h2>
+        
+        <div class="store-options">
+            <!-- Opción Sede ATE -->
+            <div class="store">
+                <input type="radio" id="ate" name="store" value="Sede Ate">
+                <label for="ate">
+                    <figure>
+                        <img src="images/tienda.jps.jpg" alt="Sede ATE">
+                        <figcaption>Descripción de la Sede ATE</figcaption>
+                    </figure>
+                </label>
+            </div>
+            
+            <!-- Opción Sede SJL -->
+            <div class="store">
+                <input type="radio" id="sjl" name="store" value="Sede SJL">
+                <label for="sjl">
+                    <figure>
+                        <img src="images/tienda.jps.jpg" alt="Sede SJL">
+                        <figcaption>Descripción de la Sede SJL</figcaption>
+                    </figure>
+                </label>
+            </div>
+        </div>
+        
+        <div id="confirm-store-button-container" style="display:none;">
+            <button id="confirm-store-button">Confirmar Sede</button>
+        </div>
+    </main>
+
+    <!-- Modal para "RECOGER EN TIENDA" -->
+    <div id="pickup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>RECOGER EN TIENDA</p>
+            <button id="pedido-confirmado-button">PEDIDO CONFIRMADO</button>
+        </div>
+    </div>
+</body>
+</html>
